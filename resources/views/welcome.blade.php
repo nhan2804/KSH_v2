@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="{{asset('frontend/css/home.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/news.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/intro.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/product.css')}}">
 </head>
 <body>
     <div class="web">
@@ -39,7 +40,7 @@
                           <a href="index.html" class="item__menu-link" style="background: #292626">Trang chủ</a>
                         </li>
                         <li class="item__menu">
-                          <a href="javascript:avoid(0)" class="item__menu-link">
+                          <a href="{{URL::to('product')}}" class="item__menu-link">
                             Sản phẩm<i class="fas fa-chevron-down" style="margin-left: 4px"></i>
                           </a>
                           <ul class="submenu p-0">

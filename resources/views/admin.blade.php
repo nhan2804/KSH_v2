@@ -8,12 +8,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
-  <link href="{{asset('backend/assets/css/material-dashboard.css?v=2.1.0')}}" rel="stylesheet" />
+  <link href="{{asset('backend/assets/css/material-dashboard.css')}}" rel="stylesheet" />
     <script src="{{asset('backend/ckeditor/ckeditor.js')}}"></script>
 </head> 
 <body class="dark-edition">
   <div class="wrapper ">
-    <div class="sidebar" data-color="orange" data-background-color="black" data-image="{{asset('/assets/img/sidebar-2.jpg')}}">
+    <div class="sidebar" data-color="purple"  data-background-color="black" data-image="{{asset('backend/assets/img/sidebar-2.jpg')}}">
       <div class="logo">
         <a  class="simple-text logo-normal">
           Admin
@@ -58,7 +58,9 @@
           <div class="collapse navbar-collapse justify-content-end">
             <ul class="navbar-nav">
               <li class="nav-item">
+              <p>Admin</p>
                 <a class="nav-link" href="javascript:void(0)">
+                  
                   <i class="material-icons">notifications</i>
                   <p class="d-lg-none d-md-block">
                     Notifications

@@ -29,7 +29,10 @@ Route::prefix('news')->group(function () {
     Route::get('/','NewsController@index');
     
 });
-
+Route::prefix('product')->group(function () {
+    Route::get('/','ProductController@index');
+    
+});
 //Admin
 Route::prefix('admin')->group(function () {
     Route::prefix('news')->group(function () {
