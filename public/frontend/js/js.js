@@ -26,3 +26,14 @@ $('.page').click(function() {
 		$(".page").hide();
 	}
 });
+
+var elements = document.getElementsByClassName("d-product-img-more");
+
+var myFunction = function() {
+    var newSrc = this.getAttribute("src");
+    document.getElementsByClassName("d-product-main-img")[0].setAttribute('src', newSrc);
+};
+
+for (var i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', myFunction, false);
+}

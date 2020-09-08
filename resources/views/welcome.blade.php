@@ -14,12 +14,13 @@
     <link rel="stylesheet" href="{{asset('frontend/css/news.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/intro.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/product.css')}}">
+    <link rel="stylesheet" href="{{asset('frontend/css/product_details.css')}}">
 </head>
 <body>
     <div class="web">
         <div class="wrap__header pt-1 pb-1 sticky__pined">
           <div class="container header__section1">
-              <a href="index.html"><img src="{{'frontend/img/logo.png'}}" class="logo" alt=""></a>
+              <a href="index.html"><img src="{{ asset('frontend/img/logo.png') }}" class="logo" alt=""></a>
               <ul class="list__header">
                   <li><i class="fas fa-align-left"></i> Giới thiệu</li>
                   <li><i class="fas fa-award"></i> Chất lượng dịch vụ</li>
@@ -37,7 +38,7 @@
                 <div class="container header__section2">
                     <ul class="list__menu p-0 m-0">
                         <li class="item__menu">
-                          <a href="index.html" class="item__menu-link" style="background: #292626">Trang chủ</a>
+                          <a href="{{ URL::to('/') }}" class="item__menu-link" style="background: #292626">Trang chủ</a>
                         </li>
                         <li class="item__menu">
                           <a href="{{URL::to('product')}}" class="item__menu-link">
@@ -81,7 +82,7 @@
                             </ul>
                         </li>
                         <li class="item__menu">
-                            <a href="news.html" class="item__menu-link">Tin tức</a>
+                            <a href="{{ URL::to('news') }}" class="item__menu-link">Tin tức</a>
                         </li>
                         <li class="item__menu">
                             <a href="contact.html" class="item__menu-link">Tư vấn khách hàng</a>

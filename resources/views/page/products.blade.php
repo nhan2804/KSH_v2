@@ -63,7 +63,7 @@
 						</div>
 						<h4 class="product__title">Ghế Yukino chất lượng cao</h4>
 						<p class="product__desc">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-						<a href="#" class="btn__primary btn--buy">Xem chi tiết</a>
+						<a href="{{ URL::to('product/a') }}" class="btn__primary btn--buy">Xem chi tiết</a>
 					</div>
 				</div>
 				<div class="col-lg-6 mb-4">

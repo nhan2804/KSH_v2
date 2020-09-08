@@ -10,4 +10,9 @@ class ProductController extends Controller
     {
     	return view('page.products');
     }
+
+    public function product_details($slug)
+    {
+        return view('page.product_details');
+    }
 }

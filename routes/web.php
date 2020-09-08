@@ -30,7 +30,8 @@ Route::prefix('news')->group(function () {
     
 });
 Route::prefix('product')->group(function () {
-    Route::get('/','ProductController@index');
+	Route::get('/','ProductController@index');
+    Route::get('/{slug}','ProductController@product_details');
     
 });
 //Admin
