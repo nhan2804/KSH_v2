@@ -117,7 +117,11 @@
   <script src="{{asset('backend/assets/js/material-dashboard.js?v=2.1.0')}}"></script>
   <script src="{{asset('backend/assets/demo/demo.js')}}"></script>
 
- 
+ <script type="text/javascript">
+   $('#btn_upload').on('click', function(event) {
+    window.open('https://vi.imgbb.com/', "Upload Ảnh", "height=400,width=600");
+    });
+ </script>
 </body>
 
 </html>

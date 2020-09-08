@@ -11,8 +11,11 @@
 		<label>Ảnh bài viết</label>
 		<input type="file" name="img_upload" id="img_upload" accept="image/*">
 		<br>
+		<button class="btn btn-info" type="button" id="btn_upload">Upload ảnh</button>
+		<br>
 		<label>Nội dung bài viết</label>
 		<textarea id="edit_post"  name="content_news" cols="80" rows="10"></textarea>
+
 		<label>Chủ đề bài viết</label>
 		<select name="cate" class="form-control">
 			@foreach($cate as $key=>$value)
@@ -22,6 +25,7 @@
 		<input type="submit" name="" class="btn btn-primary" value="Đăng bài">
 	</div>
 </form>
+
 @if (count($errors) > 0)
  <div class = "alert alert-danger">
         <ul>
@@ -36,6 +40,7 @@
     	filebrowserUploadUrl:"{{asset('/upload/image')}}",
     	filebrowserBrowseUrl:"{{asset('/upload/image')}}"
     });
+
 </script> 
 </div>
 @endsection

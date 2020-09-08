@@ -10,16 +10,7 @@
                       <i class="far fa-clock"> 28/04/2001</i>
                     </div>
                     <div class="main-post-content">
-                        {!! $data->content_news !!}
-                      <div class="main-post-img">
-                        <img src="https://www.xuanhoa.vn/wp-content/uploads/2020/08/fpt-can-tho-9.jpg"/>
-                      </div>
-                      <div class="main-post-img">
-                        <img src="https://www.xuanhoa.vn/wp-content/uploads/2020/08/fpt-can-tho-8.jpg"/>
-                      </div>
-                      <div class="main-post-img">
-                        <img src="https://www.xuanhoa.vn/wp-content/uploads/2020/08/fpt-can-tho-7.jpg"/>
-                      </div>
+                        {!! html_entity_decode($data->content_news) !!}
                     </div>
                 </div>
                 <div class="col-lg-3">
