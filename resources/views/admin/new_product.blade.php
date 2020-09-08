@@ -1,0 +1,140 @@
+@extends('admin')
+@section('title','Bài viết');
+@section('content')
+<section class="content ">
+        @if(count($errors) >0)
+            <ul>
+                @foreach($errors->all() as $error)
+                    <li class="text-danger">{{ $error }}</li>
+                @endforeach
+            </ul>
+        @endif
+        @if (\Session::has('success'))
+            <div class="alert alert-success">
+                <ul>
+                    <li>{!! \Session::get('success') !!}</li>
+                </ul>
+            </div>
+        @endif
+        <!-- enctype="multipart/form-data" class="dropzone dz-clickable" -->
+        <form action="{{ url('admin/product') }}" method="POST">
+            {{ csrf_field() }}
+            <div class="col-md-12">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Thêm mới hàng</h3>
+                    </div>
+                    <div class="box-body ">
+                        <div class="form-group col-md-12">
+                            <label>Tên mặt hàng</label>
+                            <input type="text" name="name_pro" class="form-control" value="">
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Miêu tả</label>
+                            <textarea id="edit_post" name="desc_pro" class="form-control"></textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Chi tiết</label>
+                            <textarea name="detail_pro" class="form-control">
+                            </textarea>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Loại hàng</label>
+                            <select class="form-control" name="cate_id">
+                                @foreach($data as $k=>$v)
+                                <option value="{{$v->cate_id}}">{{$v->name_cate}}</option>  
+                                @endforeach 
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="box">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Thông tin SEO hàng</h3>
+                    </div>
+                    <div class="box-body">
+                        <div class="form-group col-md-12">
+                            SEO Title <input type="text" name="seo_title" class="form-control"  value="">
+                            Meta Keywords <input type="text" name="seo_key" class="form-control"  value="">
+                            Meta Description <input type="text" name="seo_desc" class="form-control"  value="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button type="submit" class="btn btn-success pull-right">
+                    <i class="fa fa-save"></i>
+                    <span>Save and back</span>
+                </button>
+            </div>
+        </form>
+        <br>
+        <br>
+        <br>
+
+        <form enctype="multipart/form-data">
+            <div class="col-md-12">
+            <div class="dropzone" id="my-dropzone" name="myDropzone">
+
+            </div>
+        </div>
+        </form>
+        
+    </section>
+    <script type="text/javascript">
+       Dropzone.options.myDropzone= {
+           url: '{{ url('admin/product/uploadImg') }}',
+           headers: {
+               'X-CSRF-TOKEN': '{!! csrf_token() !!}'
+           },
+           autoProcessQueue: true,
+           uploadMultiple: true,
+           parallelUploads: 5,
+           maxFiles: 10,
+           maxFilesize: 5,
+           acceptedFiles: ".jpeg,.jpg,.png,.gif",
+           dictFileTooBig: 'Image is bigger than 5MB',
+           addRemoveLinks: true,
+           removedfile: function(file) {
+           var name = file.name;    
+           name =name.replace(/\s+/g, '-').toLowerCase();    /*only spaces*/
+            $.ajax({
+                type: 'POST',
+                url: '{{ url('admincp/deleteImg') }}',
+                headers: {
+                     'X-CSRF-TOKEN': '{!! csrf_token() !!}'
+                 },
+                data: "id="+name,
+                dataType: 'html',
+                success: function(data) {
+                    $("#msg").html(data);
+                }
+            });
+          var _ref;
+          if (file.previewElement) {
+            if ((_ref = file.previewElement) != null) {
+              _ref.parentNode.removeChild(file.previewElement);
+            }
+          }
+          return this._updateMaxFilesReachedClass();
+        },
+        previewsContainer: null,
+        hiddenInputContainer: "body",
+       }
+    </script>
+    <style>
+        .dropzone {
+            border: 2px dashed #0087F7;
+            border-radius: 5px;
+            background: white;
+        }
+    </style>
+    <script>
+    CKEDITOR.replace("edit_post",{
+        filebrowserUploadUrl:"{{asset('/upload/image')}}",
+        filebrowserBrowseUrl:"{{asset('/upload/image')}}"
+    });
+</script> 
+@endsection

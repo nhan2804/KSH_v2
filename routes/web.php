@@ -41,4 +41,7 @@ Route::prefix('admin')->group(function () {
 	    Route::post('/insert','Admin\NewsController@insert');
 	    Route::post('/insert-cate','Admin\NewsController@insert_cate');
 	});
+	Route::resource('product', 'Admin\ProductController');
+	Route::post('product/uploadImg', 'Admin\ProductController@postImages'); 
+	Route::post('product/insert-cate', 'Admin\ProductController@insert_cate'); 
 });

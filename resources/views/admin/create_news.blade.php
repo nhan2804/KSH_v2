@@ -32,10 +32,10 @@
      </div>
  @endif
 <script>
-    config = {};
-    config.entities_latin = false;
-    config.language = "vi";
-    CKEDITOR.replace("edit_post", config);
+    CKEDITOR.replace("edit_post",{
+    	filebrowserUploadUrl:"{{asset('/upload/image')}}",
+    	filebrowserBrowseUrl:"{{asset('/upload/image')}}"
+    });
 </script> 
 </div>
 @endsection

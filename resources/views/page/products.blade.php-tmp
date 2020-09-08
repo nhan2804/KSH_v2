@@ -24,7 +24,7 @@
 				</div>
 				<div class="col-lg-8 gutter-6">
 					<div class="news__curr--info">
-						<h3>Lorem is bakamono yahaloo</h3>
+						<h3>Kim Thi is bakamono yahaloo</h3>
 						<p>Aprill 05,2020</p>
 					</div>
 				</div>
@@ -35,7 +35,7 @@
 				</div>
 				<div class="col-lg-8 gutter-6">
 					<div class="news__curr--info">
-						<h3>Lorem is bakamono yahaloo</h3>
+						<h3>Kim Thi is bakamono yahaloo</h3>
 						<p>Aprill 05,2020</p>
 					</div>
 				</div>
@@ -46,7 +46,7 @@
 				</div>
 				<div class="col-lg-8 gutter-6">
 					<div class="news__curr--info">
-						<h3>Lorem is bakamono yahaloo</h3>
+						<h3>Kim Thi is bakamono yahaloo</h3>
 						<p>Aprill 05,2020</p>
 					</div>
 				</div>
