@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use App\ImageProduct;
 use App\Product;
 use App\CateProduct;
+use Illuminate\Support\Str;
 class ProductController extends Controller
 {
     /**
@@ -57,8 +58,10 @@ class ProductController extends Controller
        $data->seo_title= $req->seo_title;
        $data->seo_keyword= $req->seo_key;
        $data->img_product= "ok";
+       $data->slug_pro = Str::slug($req->name_pro, "-");
        $data->save();
-       session(['id_pro' =>$data->id]);
+       session(['id_pro' =>$data->id_pro]);
+
         return redirect()->back()->with('success', 'Tạo thành công, vui lòng chọn các ảnh cho sản phẩm');   
     }
 
@@ -121,8 +124,8 @@ class ProductController extends Controller
             if ($request->hasFile('file')) {
                 $imageFiles = $request->file('file');
                 // set destination path
-                $folderDir = 'uploads/products';
-                $destinationPath = public_path('upload/products');
+                $folderDir = 'uploads/products/';
+                $destinationPath = public_path('uploads/products/');
                 // this form uploads multiple files
                 foreach ($request->file('file') as $fileKey => $fileObject ) {
                     if ($fileObject->isValid()) {

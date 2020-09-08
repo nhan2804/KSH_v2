@@ -26,3 +26,25 @@ $('.page').click(function() {
 		$(".page").hide();
 	}
 });
+$('body .d-product-img-more').on('click', function(event) {
+    $('.d-product-img-more').css('border', 'none');
+    $(this).css('border', '2px solid var(--primary)');
+    $('.img_pro--main').attr('src', $(this).attr('src'));
+});
+// $('body .d-product-img-more').on('click', function(event) {
+    
+// });
+// var elements = document.getElementsByClassName("d-product-img-more");
+
+// var myFunction = function() {
+//     var newSrc = this.getAttribute("src");
+//     this.style.border = "2px solid var(--primary)";
+//     document.getElementsByClassName("d-product-main-img")[0].setAttribute('src', newSrc);
+
+// };
+
+// for (var i = 0; i < elements.length; i++) {
+//     elements[i].addEventListener('click', myFunction, false);
+// }
+$('.d-product-img-more').eq(0).click(); 
+

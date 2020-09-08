@@ -31,18 +31,18 @@
                         </div>
                         <div class="form-group col-md-12">
                             <label>Miêu tả</label>
-                            <textarea id="edit_post" name="desc_pro" class="form-control"></textarea>
+                            <textarea  name="desc_pro" class="form-control"></textarea>
                         </div>
                         <div class="form-group col-md-12">
                             <label>Chi tiết</label>
-                            <textarea name="detail_pro" class="form-control">
+                            <textarea id="edit_post" name="detail_pro" class="form-control">
                             </textarea>
                         </div>
                         <div class="form-group col-md-12">
                             <label>Loại hàng</label>
                             <select class="form-control" name="cate_id">
                                 @foreach($data as $k=>$v)
-                                <option value="{{$v->cate_id}}">{{$v->name_cate}}</option>  
+                                <option value="{{$v->id_cate}}">{{$v->name_cate}}</option>  
                                 @endforeach 
                             </select>
                         </div>

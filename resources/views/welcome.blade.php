@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="{{asset('frontend/css/news.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/intro.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/product.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{asset('frontend/css/product_details.css')}}">
 </head>
 <body>
     <div class="web">
@@ -262,9 +263,6 @@
     once: true,
     disable: 'mobile'
  });
-   $('#btn_upload').on('click', function(event) {
-    alert("message?: DOMString");
-      window.open("https://www.w3schools.com");
-    });
+   
   </script>
 </html>
