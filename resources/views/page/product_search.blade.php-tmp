@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title','Tìm kiếm Sản Phẩm')
+@section('title',$query .' tìm kiếm Sản Phẩm')
 @section('content')
 <br>
 <div class="container">
@@ -35,7 +35,7 @@
 		</div>
 		<div class="col-lg-9">
 			<div class="row">
-				<h3 class="col-12">Tìm kiếm thành công</h3>
+				<h3 class="col-12">Tìm kiếm kết quả cho <i>{{$query}}</i></h3>
 				@foreach($data as $k=>$v)
 				<div class="col-lg-6 mb-4">
 					<div class="wrap__product">

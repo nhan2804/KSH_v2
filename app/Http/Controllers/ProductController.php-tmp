@@ -44,9 +44,10 @@ class ProductController extends Controller {
 		$cate = CateProduct::all();
 		$news = News::take(10)->get();
 		$arr  = [
-			'cate' => $cate,
-			'data' => $data,
-			'news' => $news
+			'cate'  => $cate,
+			'data'  => $data,
+			'news'  => $news,
+			'query' => $q
 		];
 		return view('page.product_search', $arr);
 	}

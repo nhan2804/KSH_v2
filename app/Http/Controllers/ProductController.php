@@ -51,7 +51,8 @@ class ProductController extends Controller
     	$arr = [
     		'cate'=>$cate,
     		'data'=>$data,
-    		'news'=>$news
+    		'news'=>$news,
+    		'query'=>$q
     	];
     	return view('page.product_search',$arr);
     }

@@ -6,7 +6,7 @@
 	<div class="row">
 		<div class="col-lg-3">
 			<form action="{{URL::to('product/search')}}" class="product__form--search">
-				<input class="" type="text" name="query">
+				<input placeholder="Nhập để tìm sản phẩm" class="" type="text" name="query">
 				<button type="submit"><i style="color: #ccc" class="fas fa-search"></i></button>
 			</form>
 			<br>
@@ -47,7 +47,6 @@
 						<p class="product__desc">{!!$v->desc_pro!!}</p>
 						<a href="{{ URL::to('product/'.$v->slug_pro) }}" class="btn__primary btn--buy">Xem chi tiết</a>
 					</div>
-
 				</div>
 				@endforeach
 			</div>
