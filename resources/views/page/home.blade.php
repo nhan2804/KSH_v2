@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title','Tin tức')
+@section('title','Mang đến cho bạn niềm tin')
 @section('content')
 <div class="main">
                 <!-- slide -->

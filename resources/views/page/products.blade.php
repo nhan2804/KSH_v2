@@ -5,8 +5,8 @@
 <div class="container">
 	<div class="row">
 		<div class="col-lg-3">
-			<form class="product__form--search">
-				<input class="" type="text" name="">
+			<form action="{{URL::to('product/search')}}" class="product__form--search">
+				<input class="" type="text" name="query">
 				<button type="submit"><i style="color: #ccc" class="fas fa-search"></i></button>
 			</form>
 			<br>
@@ -19,7 +19,8 @@
 			</ul>
 			<h3 class="product__heading--cate">Tin gần đây</h3>
 			@foreach($news as $k=>$v)
-			<div class="row mb-2">
+
+			<a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2">
 				<div class="col-lg-4 gutter-6">
 					<img style="width: 100%;height: 70px" src="{{asset($v->thumbnail_blog)}}" alt="">
 				</div>
@@ -29,14 +30,13 @@
 						<p>Aprill 05,2020</p>
 					</div>
 				</div>
-			</div>
+			</a>
 			@endforeach
 		</div>
 		<div class="col-lg-9">
 			<div class="row">
 				@foreach($products as $k=>$v)
 				<div class="col-lg-6 mb-4">
-					
 					<div class="wrap__product">
 						<img class="img-fluid" src="{{asset($v->url_img)}}" alt="">
 						<div>
@@ -44,7 +44,7 @@
 							<i class="fas fa-eye"></i>201
 						</div>
 						<h4 class="product__title">{{$v->name_pro}}</h4>
-						<p class="product__desc">{!!$v->detail_pro!!}</p>
+						<p class="product__desc">{!!$v->desc_pro!!}</p>
 						<a href="{{ URL::to('product/'.$v->slug_pro) }}" class="btn__primary btn--buy">Xem chi tiết</a>
 					</div>
 					

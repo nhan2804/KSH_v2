@@ -1,5 +1,5 @@
 @extends('welcome')
-@section('title','Sản Phẩm')
+@section('title','Tìm kiếm Sản Phẩm')
 @section('content')
 <br>
 <div class="container">
@@ -35,7 +35,8 @@
 		</div>
 		<div class="col-lg-9">
 			<div class="row">
-				@foreach($products as $k=>$v)
+				<h3 class="col-12">Tìm kiếm thành công</h3>
+				@foreach($data as $k=>$v)
 				<div class="col-lg-6 mb-4">
 					<div class="wrap__product">
 						<img class="img-fluid" src="{{asset($v->url_img)}}" alt="">
@@ -46,8 +47,7 @@
 						<h4 class="product__title">{{$v->name_pro}}</h4>
 						<p class="product__desc">{!!$v->desc_pro!!}</p>
 						<a href="{{ URL::to('product/'.$v->slug_pro) }}" class="btn__primary btn--buy">Xem chi tiết</a>
-					</div>
-
+					</div>	
 				</div>
 				@endforeach
 			</div>
