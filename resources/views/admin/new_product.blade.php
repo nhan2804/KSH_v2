@@ -27,15 +27,15 @@
                     <div class="box-body ">
                         <div class="form-group col-md-12">
                             <label>Tên mặt hàng</label>
-                            <input type="text" name="name_pro" class="form-control" value="">
+                            <input required type="text" name="name_pro" class="form-control" value="">
                         </div>
                         <div class="form-group col-md-12">
                             <label>Miêu tả</label>
-                            <textarea  name="desc_pro" class="form-control"></textarea>
+                            <textarea required  name="desc_pro" class="form-control"></textarea>
                         </div>
                         <div class="form-group col-md-12">
                             <label>Chi tiết</label>
-                            <textarea id="edit_post" name="detail_pro" class="form-control">
+                            <textarea required id="edit_post" name="detail_pro" class="form-control">
                             </textarea>
                         </div>
                         <div class="form-group col-md-12">

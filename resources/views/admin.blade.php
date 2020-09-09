@@ -7,9 +7,10 @@
   <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  
   <link href="{{asset('backend/assets/css/material-dashboard.css')}}" rel="stylesheet" />
     <script src="{{asset('backend/ckeditor/ckeditor.js')}}"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/dropzone.css" integrity="sha512-CmjeEOiBCtxpzzfuT2remy8NP++fmHRxR3LnsdQhVXzA3QqRMaJ3heF9zOB+c1lCWSwZkzSOWfTn1CdqgkW3EQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/basic.min.css" integrity="sha512-MeagJSJBgWB9n+Sggsr/vKMRFJWs+OUphiDV7TJiYu+TNQD9RtVJaPDYP8hA/PAjwRnkdvU+NsTncYTKlltgiw==" crossorigin="anonymous" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/dropzone/5.7.2/min/dropzone.min.js" integrity="sha512-9WciDs0XP20sojTJ9E7mChDXy6pcO0qHpwbEJID1YVavz2H6QBz5eLoDD8lseZOb2yGT8xDNIV7HIe1ZbuiDWg==" crossorigin="anonymous"></script>
@@ -31,14 +32,14 @@
             </a>
           </li>
           <li class="nav-item active  ">
-            <a class="nav-link" href="#">
-              <i class="material-icons">product</i>
+            <a class="nav-link" href="{{URL::to('admin/product')}}">
+              <i class="fas fa-align-right"></i>
               <p>Sản phẩm</p>
             </a>
           </li>
           <li class="nav-item active  ">
             <a class="nav-link" href="{{URL::to('admin/news')}}">
-              <i class="material-icons">new</i>
+              <i class="far fa-newspaper"></i>
               <p>Tin tức</p>
             </a>
           </li>

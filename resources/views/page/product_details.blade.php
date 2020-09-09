@@ -52,7 +52,7 @@
             <div class="row">
                 @foreach($ref_pro as $k=>$v)
                 <div class="col-lg-4">
-                    <a class="d-product-more-img-wrap" href="#">
+                    <a class="d-product-more-img-wrap" href="{{URL::to('product/'.$v->slug_pro)}}">
                         <img src="{{asset($v->url_img)}}" alt="" class="d-product-more-img">
                         <div class="d-product-more-details">
                             <div class="d-product-more-infor">

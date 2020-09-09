@@ -8,7 +8,7 @@
 				{{csrf_field()}}
 				<div class="form-group">
 					<label>Tên danh mục</label>
-					<input class="form-control" type="text" name="name_cate">
+					<input required class="form-control" type="text" name="name_cate">
 					<br>
 					<button class="btn btn-success" type="submit" name=""><i class="fas fa-plus"></i> Thêm</button>
 				</div>

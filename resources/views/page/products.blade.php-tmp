@@ -19,7 +19,6 @@
 			</ul>
 			<h3 class="product__heading--cate">Tin gần đây</h3>
 			@foreach($news as $k=>$v)
-
 			<a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2">
 				<div class="col-lg-4 gutter-6">
 					<img style="width: 100%;height: 70px" src="{{asset($v->thumbnail_blog)}}" alt="">

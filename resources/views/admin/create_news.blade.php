@@ -6,10 +6,10 @@
 	{{csrf_field()}}
 	<div class="form-group">
 		<label>Tiêu đề bài viết</label>
-		<input class="form-control" type="text" name="title_news">
+		<input required class="form-control" type="text" name="title_news">
 		<br>
 		<label>Ảnh bài viết</label>
-		<input type="file" name="img_upload" id="img_upload" accept="image/*">
+		<input required type="file" name="img_upload" id="img_upload" accept="image/*">
 		<br>
 		<button class="btn btn-info" type="button" id="btn_upload">Upload ảnh</button>
 		<br>
