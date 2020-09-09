@@ -43,6 +43,12 @@
               <p>Tin tức</p>
             </a>
           </li>
+          <li class="nav-item active  ">
+            <a class="nav-link" href="{{URL::to('admin/logout')}}">
+              <i class="far fa-newspaper"></i>
+              <p>Đăng xuất</p>
+            </a>
+          </li>
           <!-- your sidebar here -->
         </ul>
       </div>

@@ -85,16 +85,16 @@
                             <a href="{{URL::to('/news')}}" class="item__menu-link">Tin tức</a>
                         </li>
                         <li class="item__menu">
-                            <a href="contact.html" class="item__menu-link">Tư vấn khách hàng</a>
+                            <a href="{{ URL::to('contact') }}" class="item__menu-link">Tư vấn khách hàng</a>
                         </li>
                         <li class="item__menu">
                             <a href="javascript:avoid(0)" class="item__menu-link">Về KSH <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu p-0" style="width: 100%;">
                                 <li>
-                                    <a href="general_introduce.html" class="header-major__link">Giới thiệu chung</a>
+                                    <a href="{{ URL::to('introduce') }}" class="header-major__link">Giới thiệu chung</a>
                                 </li>
                                 <li>
-                                    <a href="company_system.html" class="header-major__link">Hệ thống công ty</a>
+                                    <a href="{{ URL::to('system-company') }}" class="header-major__link">Hệ thống công ty</a>
                                 </li>
                             </ul>
                         </li>
