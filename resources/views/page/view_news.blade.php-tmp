@@ -27,7 +27,7 @@
                         </div>
                         <div class="col-lg-9">
                             <div>
-                                <a href="{{URL::to('news/'.$v->slug)}}" class="sub-post-title">{{asset($v->title_news)}}</a>
+                                <a href="{{URL::to('news/'.$v->slug)}}" class="sub-post-title">{{$v->title_news}}</a>
                                 <div class="time__post">
                                     <i class="far fa-clock"> 28/04/2001</i>
                                     <i class="far fa-eye"></i> 2009 Lượt xem
