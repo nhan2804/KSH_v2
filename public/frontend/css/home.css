@@ -100,7 +100,7 @@ body {
     display: flex;
 }
 .list__menu .item__menu:hover .submenu{
-    display: block;
+    display: flex;
 }
 /* .list__menu .item__menu:first-child{
     color:rgb(122, 223, 226);
@@ -110,6 +110,7 @@ body {
 
 }
 .submenu{
+    display: flex;
     width: 150%;
     list-style-type: none;
     position: absolute;
@@ -130,6 +131,7 @@ body {
     }
 }
 .submenu li{
+
     width: 100%;
     text-align: left;
     color:#3c3a3a;

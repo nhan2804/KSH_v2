@@ -39,11 +39,18 @@
                             </textarea>
                         </div>
                         <div class="form-group col-md-12">
-                            <label>Loại hàng</label>
-                            <select class="form-control" name="cate_id">
+                            <label>Chọn loại</label>
+                            <select class="form-control" id="cate_id_1">
                                 @foreach($data as $k=>$v)
                                 <option value="{{$v->id_cate}}">{{$v->name_cate}}</option>
                                 @endforeach
+                            </select>
+
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label>Chọn danh mục</label>
+                            <select class="form-control" id="cate_child" name="cate_id">
+
                             </select>
                         </div>
                     </div>
@@ -83,6 +90,30 @@
         </form>
 
     </section>
+
+    <script type="text/javascript">
+        $.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+        $('#cate_id_1').on('change', function(event) {
+        $parent_id= $(this).val();
+        $.ajax({
+            url: 'cate-parent',
+            type: 'POST',
+            data: {
+                parent_id: $parent_id,
+            },
+            success:function (data) {
+                $('#cate_child').html(data);
+            },
+            error:function () {
+               alert("errro");
+            }
+        })
+    });
+    </script>
     <script type="text/javascript">
        Dropzone.options.myDropzone= {
            url: '{{ url('admin/product/uploadImg') }}',

@@ -58,5 +58,11 @@ Route::middleware('auth')->group(function() {
 		Route::resource('product', 'Admin\ProductController');
 		Route::post('product/uploadImg', 'Admin\ProductController@postImages'); 
 		Route::post('product/insert-cate', 'Admin\ProductController@insert_cate'); 
+		Route::post('product/loadcate', 'Admin\ProductController@load_cate'); 
+		Route::post('product/cate-parent', 'Admin\ProductController@cate_parent'); 
 	});
 });
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

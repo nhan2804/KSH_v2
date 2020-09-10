@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSH | @yield('title')</title>
+
+	  <link rel="icon" type="image" href="images/logo.jpg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -20,7 +22,7 @@
     <div class="web">
         <div class="wrap__header pt-1 pb-1 sticky__pined">
           <div class="container header__section1">
-              <a href="{{URL::to('/')}}"><img src="{{asset('frontend/img/logo.png')}}" class="logo" alt=""></a>
+              <a href="{{URL::to('/')}}"><img src="{{ asset('images/logo.jpg') }}" class="logo" alt=""></a>
               <ul class="list__header">
                   <li><i class="fas fa-align-left"></i> Giới thiệu</li>
                   <li><i class="fas fa-award"></i> Chất lượng dịch vụ</li>
@@ -38,22 +40,25 @@
                 <div class="container header__section2">
                     <ul class="list__menu p-0 m-0">
                         <li class="item__menu">
-                          <a href="{{URL::to('/')}}" class="item__menu-link" style="background: #292626">Trang chủ</a>
+                          <a href="{{URL::to('/')}}" class="item__menu-link">Trang chủ</a>
                         </li>
                         <li class="item__menu">
                           <a href="{{URL::to('product')}}" class="item__menu-link">
                             Sản phẩm<i class="fas fa-chevron-down" style="margin-left: 4px"></i>
                           </a>
                           <ul class="submenu p-0">
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Nội thất Xuân Hòa Đà Nẵng</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Công ty TNHH Tư vấn & Đầu tư KSH</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Công ty TNHH Tư vấn & Đầu tư KSH</a>
-                                </li>
+                            @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
+                            <li>
+                              <h3 style="color: red">{{$v->name_cate}}</h3>
+                              @foreach($all_cate_pro->where('parent_id',$v->id_cate) as $k1=>$v1)
+                                <ul>
+                                  <li>
+                                    <a href="{{'product/danh-muc/'.$v1->slug_cate}}" target="_blank" class="header-major__link">{{$v1->name_cate}}</a>
+                                  </li>
+                                </ul>
+                                @endforeach
+                            </li>
+                            @endforeach
                           </ul>
                         </li>
                         <li class="item__menu">
@@ -85,16 +90,16 @@
                             <a href="{{URL::to('/news')}}" class="item__menu-link">Tin tức</a>
                         </li>
                         <li class="item__menu">
-                            <a href="contact.html" class="item__menu-link">Tư vấn khách hàng</a>
+                            <a href="{{ URL::to('contact') }}" class="item__menu-link">Tư vấn khách hàng</a>
                         </li>
                         <li class="item__menu">
                             <a href="javascript:avoid(0)" class="item__menu-link">Về KSH <i class="fas fa-chevron-down"></i></a>
                             <ul class="submenu p-0" style="width: 100%;">
                                 <li>
-                                    <a href="general_introduce.html" class="header-major__link">Giới thiệu chung</a>
+                                    <a href="{{ URL::to('introduce') }}" class="header-major__link">Giới thiệu chung</a>
                                 </li>
                                 <li>
-                                    <a href="company_system.html" class="header-major__link">Hệ thống công ty</a>
+                                    <a href="{{ URL::to('system-company') }}" class="header-major__link">Hệ thống công ty</a>
                                 </li>
                             </ul>
                         </li>

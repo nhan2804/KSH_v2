@@ -17,7 +17,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        return view('admin.product');
+        return view('admin.product')->with('products',Product::paginate(20));
     }
 
     /**
@@ -27,7 +27,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $data = CateProduct::all();
+        $data = CateProduct::where('type_cate',0)->get();
         return view('admin.new_product')->with('data',$data);
     }
 
@@ -113,10 +113,35 @@ class ProductController extends Controller
     {
         $data = new CateProduct;
         $data->name_cate= $request->name_cate;
-        $data->parent_id= 0;
+        $cate_parent = ($request->cate=='') ? 0 : $request->cate;
+        $data->parent_id= $cate_parent;
+        $type = ($request->cate=='') ? 0 : 1;
+        $data->type_cate = $type;
+        $data->slug_cate = Str::slug($request->name_cate, "-");
         $data->save();
         return redirect()->back()->with('success', 'Tạo danh mục thành công,');   
 
+    }
+    public function load_cate()
+    {
+        $data= CateProduct::where('type_cate',0)->get();
+        $html='';
+        if (count($data)) {
+            foreach ($data as $key => $v) {
+            $html.='<option value="'.$v->id_cate.'">'.$v->name_cate.'</option>';
+            }
+        }
+        
+        echo($html);
+    }
+    public function cate_parent(Request $r)
+    {
+        $data = CateProduct::where('parent_id',$r->parent_id)->get();
+        $html='';
+        foreach ($data as $key => $v) {
+            $html.='<option value="'.$v->id_cate.'">'.$v->name_cate.'</option>';
+        }
+        echo($html);
     }
     function postImages(Request $request)
     {

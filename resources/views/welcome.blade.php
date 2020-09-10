@@ -47,15 +47,18 @@
                             Sản phẩm<i class="fas fa-chevron-down" style="margin-left: 4px"></i>
                           </a>
                           <ul class="submenu p-0">
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Nội thất Xuân Hòa Đà Nẵng</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Công ty TNHH Tư vấn & Đầu tư KSH</a>
-                                </li>
-                                <li>
-                                    <a href="#" target="_blank" class="header-major__link">Công ty TNHH Tư vấn & Đầu tư KSH</a>
-                                </li>
+                            @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
+                            <li>
+                              <h3 style="color: red">{{$v->name_cate}}</h3>
+                              @foreach($all_cate_pro->where('parent_id',$v->id_cate) as $k1=>$v1)
+                                <ul>
+                                  <li>
+                                    <a href="{{'product/danh-muc/'.$v1->slug_cate}}" target="_blank" class="header-major__link">{{$v1->name_cate}}</a>
+                                  </li>
+                                </ul>
+                                @endforeach
+                            </li>
+                            @endforeach
                           </ul>
                         </li>
                         <li class="item__menu">
