@@ -24,9 +24,9 @@
           <div class="container header__section1">
               <a href="{{URL::to('/')}}"><img src="{{ asset('images/logo.jpg') }}" class="logo" alt=""></a>
               <ul class="list__header">
-                  <li><i class="fas fa-align-left"></i> Giới thiệu</li>
-                  <li><i class="fas fa-award"></i> Chất lượng dịch vụ</li>
-                  <li><i class="fab fa-black-tie"></i> Sứ mệnh</li>
+                  <li><i class="fas fa-user-tie"></i> Chuyên nghiệp</li>
+                  <li><i class="fas fa-award"></i> Chất lượng</li>
+                  <li><i class="fab fa-black-tie"></i> Tin tưởng</li>
               </ul>
               <form class="form__search" action="">
                   <input placeholder="Nhập từ khóa để tìm kiếm" class="form__input" type="text" name="" id="">
@@ -46,14 +46,14 @@
                           <a href="{{URL::to('product')}}" class="item__menu-link">
                             Sản phẩm<i class="fas fa-chevron-down" style="margin-left: 4px"></i>
                           </a>
-                          <ul class="submenu p-0">
+                          <ul class="p-0 product-submenu">
                             @foreach($all_cate_pro->where('type_cate',0) as $k=>$v)
-                            <li>
-                              <h3 style="color: red">{{$v->name_cate}}</h3>
+                            <li class="product-menu-wrap">
+                              <h3 style="color: red" class="text-left">{{$v->name_cate}}</h3>
                               @foreach($all_cate_pro->where('parent_id',$v->id_cate) as $k1=>$v1)
-                                <ul>
+                                <ul class="product-submenu-item">
                                   <li>
-                                    <a href="{{'product/danh-muc/'.$v1->slug_cate}}" target="_blank" class="header-major__link">{{$v1->name_cate}}</a>
+                                    <a href="{{'product/danh-muc/'.$v1->slug_cate}}" target="_blank" class="header-major--link-product">{{$v1->name_cate}}</a>
                                   </li>
                                 </ul>
                                 @endforeach
@@ -207,7 +207,7 @@
         <div class="text-center text-md-right">
           <ul class="list-unstyled list-inline">
             <li class="list-inline-item">
-              <a class="btn-floating btn-sm rgba-white-slight mx-1">
+              <a href="https://www.facebook.com/C%C3%B4ng-ty-TNHH-T%C6%B0-v%E1%BA%A5n-%C4%90%E1%BA%A7u-t%C6%B0-KSH-101947048311801" class="btn-floating btn-sm rgba-white-slight mx-1" target="_blank">
                 <i class="fab fa-facebook-f"></i>
               </a>
             </li>

@@ -17,7 +17,7 @@
             <div class="row">
                 <div class="col-sm-7 d-product-body-img">
                     <div class="d-product-img-show-wrap">
-                        <img class="img_pro--main" src="{{asset($pro->url_img)}}" alt="">
+                        <img class="img_pro--main" src="{{ $pro->url_img }}" alt="">
                     </div>
                     <div class="d-product-img-more-wrap row">
                         @foreach($imgs as $k=>$v)
@@ -28,14 +28,9 @@
                     </div>
                 </div>
                 <div class="col-sm-5 d-product-body-details">
-                    {{-- <div class="d-product-details-item"><b>Tên sản phẩm:</b> Giường Skagen 1m6</div>
-                    <div class="d-product-details-item"><b>Kích thước:</b> D2000 -R1600 - C930
-                    </div>
-                    <div class="d-product-details-item"><b>Vật liệu:</b> Gỗ Walnut + Vải</div>
-                    <div class="d-product-details-item"><b>Màu sắc:</b> Đỏ cam lam chàm tím</div>
-                    <div class="d-product-details-item"><b>Tình trạng:</b> Còn hàng hoặc hết hàng</div>
-                    <div class="d-product-details-item"><b>Mô tả:</b> Giường Skagen nổi bật cho phòng ngủ theo phong cách Bắc Âu. Đầu giường bo cong bọc vải mềm mại như thể hiện sự chào đón bạn với vòng tay rộng mở và mời bạn dành buổi tối sớm và buổi sáng lười biếng trong sự thoải mái và phong cách. Là sản phẩm trong bộ sưu tập Skagen, giường ngủ Skagen phù hợp với những phòng ngủ có diện tích lớn. </div> --}}
-                    {!!$pro->detail_pro!!}
+                    <div class="d-product-details-item"><b>Tên sản phẩm:</b> {{$pro->name_pro}}</div>
+                    <div class="d-product-details-item"><b>Mô tả: </br></b> {!! $pro->detail_pro !!} </div>
+                    
                     <div class="d-product-details-item">
                         <button class="d-product-contact-btn">
                             <a href="">Mua ngay</a>

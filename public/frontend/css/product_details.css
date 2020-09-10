@@ -22,6 +22,7 @@
 
 .d-product-img-show-wrap img {
     width: 100%;
+    height: 500px;
 }
 
 .d-product-img-more__item img {
@@ -105,13 +106,13 @@
     left: 0;
     bottom: 0;
     right: 0;
-    height: 33%;
-    background: rgba(0, 0, 0, 0.8);
+    height: 17%;
+    background: rgba(198, 14, 30, 0.8);
     color: #fff;
     padding-left: 8px;
     font-size: 16px;
     font-weight: bold;
-    transform: translateY(60%);
+    transform: translateY(35%);
     transition: all 0.2s linear;
 }
 

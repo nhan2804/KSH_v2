@@ -84,9 +84,68 @@
 	font-size: 18px;
 }
 
+.sub-post-title:hover {
+	color: var(--primary);
+	text-decoration: none;
+}
+
 .sub-post-desc {
 	display: -webkit-box;
 	-webkit-box-orient: vertical;
     -webkit-line-clamp: 4;
     overflow: hidden;
+}
+
+.news-left {
+	color: #000;
+	padding-bottom: 8px;
+	border-bottom: 1px solid var(--primary);
+}
+
+.news-left:hover {
+	text-decoration: none;
+	color: #000;
+}
+
+.news-left:hover .news-left-title {
+	color: var(--primary);
+}
+
+.news__curr--desc {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
+
+.news__curr--info {
+	display: b;
+}
+
+.gutter-6.news-left-img {
+	padding-left: 0 !important;
+}
+
+.news-achievement-title {
+	color: #000;
+	font-size: 16px;
+	font-weight: bold;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 5;
+	overflow: hidden;
+}
+
+.news-achievement {
+	margin-bottom: 20px;
+}
+
+.news-achievement:hover {
+	text-decoration: none !important;
+	color: var(--primary);
+}
+
+.news-achievement:hover .news-achievement-title {
+	color: var(--primary);
+
 }

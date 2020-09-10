@@ -45,13 +45,36 @@ a.product__link--cate{
 	color: black;
 	font-weight: 600;
 }
+
 .product__desc{
 	color:#747272;
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 5;
+	overflow: hidden;
+	height: 120px;
 }
+
 .btn--buy{
 	background: var(--primary);
 }
 .wrap__product img{
-	height: 250px;
+	height: 400px;
 	width: 100%;
+}
+
+.produce-recent-news {
+	color: #000;
+}
+
+.produce-recent-news:hover {
+	color: var(--primary);
+	text-decoration: none;
+}
+
+.product-current-news-title {
+	display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+	overflow: hidden;
 }

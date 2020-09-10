@@ -1,4 +1,5 @@
 @extends('welcome')
+@section('title','Tin tức')
 @section('content')
 <div class="main container">
 	<div class="breadcrumb mt-1">
@@ -28,13 +29,13 @@
         </div> --}}
         <div class="col-lg-4">
             @foreach($news as $k=>$v)
-            <a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2">
-                <h6>{{$v->title_news}}</h6>
-                <div class="col-lg-4 gutter-6">
+            <a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2 news-left">
+                <h6 class="news-left-title">{{$v->title_news}}</h6>
+                <div class="col-lg-4 gutter-6 news-left-img">
                     <img style="width: 100%;height: 70px" src="{{asset($v->thumbnail_blog)}}" alt="">
                 </div>
                 <div class="col-lg-8 gutter-6">
-                    <div class="news__curr--info">
+                    <div class="news__curr--desc">
                         <p>{{$v->desc_news}}</p>
                     </div>
                 </div>
@@ -42,18 +43,18 @@
             @endforeach
         </div>
         <div class="col-lg-8">
-            <div class="row">
+            <div class="row ">
             @foreach($pros as $k=>$v)
-            <h3 class="col-12 col-lg-12">{{$v['name_cate']}}</h3>
+            <h3 class="col-12 col-lg-12" style="padding-left: 4px; color: var(--primary); font-weight:bold;">{{$v['name_cate']}}</h3>
             @foreach($v['products'] as $k1=>$v1)
-            <a href="{{URL::to('news/'.$v1->slug)}}" class="col-6 col-lg-6">
+            <a href="{{URL::to('news/'.$v1->slug)}}" class="col-6 col-lg-6 news-achievement">
                 <div class="row">
                     <div class="col-lg-7 gutter-6">
                         <img style="width: 100%;height: 130px" src="{{asset($v1->thumbnail_blog)}}" alt="">
                     </div>
                     <div class="col-lg-5 gutter-6">
-                        <div class="news__curr--info">
-                            <h3>{{$v1->title_news}}</h3>
+                        <div class="news-news__curr--info">
+                            <div class="news-achievement-title">{{$v1->title_news}}</div>
                         </div>
                     </div>
                 </div>

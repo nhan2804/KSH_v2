@@ -17,7 +17,7 @@
                   Quảng cáo ở đây
                 </div>
             </div>
-            <h4 class="mt-4">XEM THÊM</h4>
+            <h4 class="mt-4" style="color: var(--primary); font-weight: bold;">XEM THÊM</h4>
             <div class="row">
                 @foreach($ref_news as $k=>$v)
                 <div class="col-lg-12 mb-2">
@@ -32,9 +32,9 @@
                                     <i class="far fa-clock"> 28/04/2001</i>
                                     <i class="far fa-eye"></i> 2009 Lượt xem
                                 </div>
-                                <p class="sub-post-desc">
-                                  {!!$v->content_news!!}
-                                </p>
+                                <div class="sub-post-desc">
+                                    {!!$v->content_news!!}
+                                </div>
                             </div>
                         </div>
                     </div>

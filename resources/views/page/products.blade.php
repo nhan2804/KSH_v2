@@ -19,13 +19,13 @@
 			</ul>
 			<h3 class="product__heading--cate">Tin gần đây</h3>
 			@foreach($news as $k=>$v)
-			<a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2">
+			<a href="{{URL::to('news/'.$v->slug)}}" class="row mb-2 produce-recent-news">
 				<div class="col-lg-4 gutter-6">
 					<img style="width: 100%;height: 70px" src="{{asset($v->thumbnail_blog)}}" alt="">
 				</div>
 				<div class="col-lg-8 gutter-6">
 					<div class="news__curr--info">
-						<h3>{{$v->title_news}}</h3>
+						<h3 class="product-current-news-title">{{$v->title_news}}</h3>
 						<p>Aprill 05,2020</p>
 					</div>
 				</div>
@@ -37,13 +37,13 @@
 				@foreach($products as $k=>$v)
 				<div class="col-lg-6 mb-4">
 					<div class="wrap__product">
-						<img class="img-fluid" src="{{asset($v->url_img)}}" alt="">
+						<img class="img-fluid" style="width: 100%" src="{{asset($v->url_img)}}" alt="">
 						<div>
 							<i class="far fa-clock">May 04, 2020  |  </i>
 							<i class="fas fa-eye"></i>201
 						</div>
 						<h4 class="product__title">{{$v->name_pro}}</h4>
-						<p class="product__desc">{!!$v->desc_pro!!}</p>
+						<p class="product__desc">{!!$v->desc_pro!!} </p>
 						<a href="{{ URL::to('product/'.$v->slug_pro) }}" class="btn__primary btn--buy">Xem chi tiết</a>
 					</div>
 				</div>
