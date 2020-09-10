@@ -8,6 +8,9 @@
 		<label>Tiêu đề bài viết</label>
 		<input required class="form-control" type="text" name="title_news">
 		<br>
+		<label>Miêu tả ngắn bài viết</label>
+		<input required class="form-control" type="text" name="desc_news">
+		<br>
 		<label>Ảnh bài viết</label>
 		<input required type="file" name="img_upload" id="img_upload" accept="image/*">
 		<br>

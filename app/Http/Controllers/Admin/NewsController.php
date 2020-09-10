@@ -41,6 +41,7 @@ class NewsController extends Controller
         $data->title_news = $req->title_news;
         $data->content_news = $req->content_news;
         $data->cate_parent = $req->cate;
+        $data->desc_news = $req->desc_news  ;
         $data->thumbnail_blog = $dir_img;
         $data->view_blog = 0;
         $data->slug = Str::slug($req->title_news, "-");
