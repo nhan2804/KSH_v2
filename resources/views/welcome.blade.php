@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KSH | @yield('title')</title>
+
+	  <link rel="icon" type="image" href="images/logo.jpg"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
@@ -20,7 +22,7 @@
     <div class="web">
         <div class="wrap__header pt-1 pb-1 sticky__pined">
           <div class="container header__section1">
-              <a href="{{URL::to('/')}}"><img src="{{asset('frontend/img/logo.png')}}" class="logo" alt=""></a>
+              <a href="{{URL::to('/')}}"><img src="{{ asset('images/logo.jpg') }}" class="logo" alt=""></a>
               <ul class="list__header">
                   <li><i class="fas fa-align-left"></i> Giới thiệu</li>
                   <li><i class="fas fa-award"></i> Chất lượng dịch vụ</li>
@@ -38,7 +40,7 @@
                 <div class="container header__section2">
                     <ul class="list__menu p-0 m-0">
                         <li class="item__menu">
-                          <a href="{{URL::to('/')}}" class="item__menu-link" style="background: #292626">Trang chủ</a>
+                          <a href="{{URL::to('/')}}" class="item__menu-link">Trang chủ</a>
                         </li>
                         <li class="item__menu">
                           <a href="{{URL::to('product')}}" class="item__menu-link">
