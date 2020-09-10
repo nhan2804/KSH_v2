@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 10, 2020 at 06:08 PM
+-- Generation Time: Sep 10, 2020 at 06:28 PM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.11
 
@@ -112,41 +112,11 @@ CREATE TABLE `imageproduct` (
 
 INSERT INTO `imageproduct` (`id_img`, `name_img`, `url_img`, `id_pro`, `created_at`, `updated_at`) VALUES
 (27, 'ban-hoc-ngoai-ngu-1-270x380.jpg', 'uploads/products/ban-hoc-ngoai-ngu-1-270x380.jpg', 10, '2020-09-08 07:14:37', '2020-09-08 07:14:37'),
-(28, '1599574477photo_2020-08-31_11-48-03.jpg', 'uploads/products/1599574477photo_2020-08-31_11-48-03.jpg', 10, '2020-09-08 07:14:38', '2020-09-08 07:14:38'),
-(29, '1599574478pic1.png', 'uploads/products/1599574478pic1.png', 10, '2020-09-08 07:14:38', '2020-09-08 07:14:38'),
-(30, '1599574478prize.jpg', 'uploads/products/1599574478prize.jpg', 10, '2020-09-08 07:14:38', '2020-09-08 07:14:38'),
 (31, 'fo1-bnv-00-2.jpg', 'uploads/products/fo1-bnv-00-2.jpg', 11, '2020-09-08 07:59:31', '2020-09-08 07:59:31'),
-(32, '159957717161351818_p0.png', 'uploads/products/159957717161351818_p0.png', 11, '2020-09-08 07:59:31', '2020-09-08 07:59:31'),
-(33, '159957717163373162_p0.png', 'uploads/products/159957717163373162_p0.png', 11, '2020-09-08 07:59:31', '2020-09-08 07:59:31'),
-(34, '159957717164400540_p0.png', 'uploads/products/159957717164400540_p0.png', 11, '2020-09-08 07:59:31', '2020-09-08 07:59:31'),
-(35, '159957717170479671_p0.jpg', 'uploads/products/159957717170479671_p0.jpg', 11, '2020-09-08 07:59:31', '2020-09-08 07:59:31'),
-(36, 'bhp-01-00-pu-555x300.png', 'uploads/products/ca-7a-1k-1-555x555.jpg', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
-(37, '1599626791107605367_689877658527394_1591386762386535690_n.jpg', 'uploads/products/1599626791107605367_689877658527394_1591386762386535690_n.jpg', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
-(38, '1599626791107668977_317544972621885_4131829623762157689_n.jpg', 'uploads/products/1599626791107668977_317544972621885_4131829623762157689_n.jpg', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
-(39, '1599626791107899606_200350784705485_634107179262967888_n.jpg', 'uploads/products/1599626791107899606_200350784705485_634107179262967888_n.jpg', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
-(40, '1599626791107995797_653505835238535_4898838146202082695_n.jpg', 'uploads/products/1599626791107995797_653505835238535_4898838146202082695_n.jpg', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
+(36, 'bhp-01-00-pu-555x300.png', 'uploads/products/bhp-01-00-pu-555x300.png', 12, '2020-09-08 21:46:31', '2020-09-08 21:46:31'),
 (41, 'fo1-bnv-00-2.jpg', 'uploads/products/fo1-bnv-00-2.jpg', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
-(42, '159965659763373162_p0.png', 'uploads/products/159965659763373162_p0.png', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
-(43, '159965659769859645_p0.png', 'uploads/products/159965659769859645_p0.png', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
-(44, '159965659769988643_p0_master1200.jpg', 'uploads/products/159965659769988643_p0_master1200.jpg', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
-(45, '159965659770838017_p0.jpg', 'uploads/products/159965659770838017_p0.jpg', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
-(46, '159965659771244923_p0.jpg', 'uploads/products/159965659771244923_p0.jpg', 13, '2020-09-09 06:03:17', '2020-09-09 06:03:17'),
 (47, 'bvp-5s-07-555x300.png', 'uploads/products/bvp-5s-07-555x300.png', 14, '2020-09-09 08:10:13', '2020-09-09 08:10:13'),
-(48, '1599664213ca-3a-sg-270x380.jpg', 'uploads/products/1599664213ca-3a-sg-270x380.jpg', 14, '2020-09-09 08:10:13', '2020-09-09 08:10:13'),
-(49, '1599664213ca-3b-l-270x380.jpg', 'uploads/products/1599664213ca-3b-l-270x380.jpg', 14, '2020-09-09 08:10:13', '2020-09-09 08:10:13'),
-(50, '1599664213lk-4n-01-1-2.png', 'uploads/products/1599664213lk-4n-01-1-2.png', 14, '2020-09-09 08:10:13', '2020-09-09 08:10:13'),
-(51, '1599664213lk-12n-03-270x380.jpg', 'uploads/products/1599664213lk-12n-03-270x380.jpg', 14, '2020-09-09 08:10:13', '2020-09-09 08:10:13'),
-(52, '1599664228ca-3a-l-555x555.jpg', 'uploads/products/1599664228ca-3a-l-555x555.jpg', 14, '2020-09-09 08:10:28', '2020-09-09 08:10:28'),
-(53, 'ca-7a-1k-1-555x555.jpg', 'uploads/products/ca-7a-1k-1-555x555.jpg', 15, '2020-09-10 00:10:53', '2020-09-10 00:10:53'),
-(54, '159972185370731935_p0.jpg', 'uploads/products/159972185370731935_p0.jpg', 15, '2020-09-10 00:10:53', '2020-09-10 00:10:53'),
-(55, '159972185370838017_p0.jpg', 'uploads/products/159972185370838017_p0.jpg', 15, '2020-09-10 00:10:53', '2020-09-10 00:10:53'),
-(56, '159972185370937229_p0.png', 'uploads/products/159972185370937229_p0.png', 15, '2020-09-10 00:10:53', '2020-09-10 00:10:53'),
-(57, '159972185371244923_p0.jpg', 'uploads/products/159972185371244923_p0.jpg', 15, '2020-09-10 00:10:53', '2020-09-10 00:10:53'),
-(58, 'gm-01-00-img_9996.png', 'uploads/products/gm-01-00-img_9996.png', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01'),
-(59, '159973272177702461_p0.jpg', 'uploads/products/159973272177702461_p0.jpg', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01'),
-(60, '159973272175706518_p0.png', 'uploads/products/159973272175706518_p0.png', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01'),
-(61, '159973272175941732_p0.png', 'uploads/products/159973272175941732_p0.png', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01'),
-(62, '159973272175992830_p0_master1200.jpg', 'uploads/products/159973272175992830_p0_master1200.jpg', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01');
+(58, 'gm-01-00-img_9996.png', 'uploads/products/gm-01-00-img_9996.png', 16, '2020-09-10 03:12:01', '2020-09-10 03:12:01');
 
 -- --------------------------------------------------------
 
@@ -235,7 +205,6 @@ INSERT INTO `product` (`id_pro`, `name_pro`, `desc_pro`, `detail_pro`, `cate_par
 (12, 'HỘC PHỤ BHP-01-00 PU\r\n', '- Hộc phụ BHP-01-00 PU là sản phẩm đi cùng với bàn lãnh đạo PU.</br>\r\n\r\n- Hộc được làm từ chất liệu gỗ MDF cao cấp và phủ sơn PU cao cấp.</br>\r\n\r\n- Hộc bao gồm: bàn phím bên trên, thích hợp khi dùng máy tính; Bên ngoài có 2 cánh mở, 1 bên để CPU.</br>\r\n\r\n- Hộc có bánh xe di chuyển.</br>', '- Hộc phụ BHP-01-00 PU là sản phẩm đi cùng với bàn lãnh đạo PU.</br>\r\n\r\n- Hộc được làm từ chất liệu gỗ MDF cao cấp và phủ sơn PU cao cấp.</br>\r\n\r\n- Hộc bao gồm: bàn phím bên trên, thích hợp khi dùng máy tính; Bên ngoài có 2 cánh mở, 1 bên để CPU.</br>\r\n\r\n- Hộc có bánh xe di chuyển.</br>', 3, '2020-09-08 21:46:01', '2020-09-08 21:46:01', 'ok', 'nha o', 'nha o', 'nha o', 'hoc-phu-bhp-01-00-pu'),
 (13, 'BÀN NHÂN VIÊN FO1-BNV-00\r\n', 'Mặt bàn gỗ MFC phủ Melamine cao cấp, Khung chân thép hộp NK, sơn bột tĩnh điện màu trắng ngà, cơ cấu liên kết bằng nhôm đúc nguyên khối, sơn bột tĩnh điện màu đen, bàn có 01 hộc di động.\r\n', 'Mặt bàn gỗ MFC phủ Melamine cao cấp, Khung chân thép hộp NK, sơn bột tĩnh điện màu trắng ngà, cơ cấu liên kết bằng nhôm đúc nguyên khối, sơn bột tĩnh điện màu đen, bàn có 01 hộc di động.\r\n', 3, '2020-09-09 06:03:01', '2020-09-09 06:03:01', 'ok', 'wibu', 'wibu', 'wibu', 'ban-nhan-vien-fo1-bnv-00'),
 (14, 'BÀN VĂN PHÒNG BVP-5S-09\r\n', '- Bàn văn phòng được làm từ gỗ MFC cao cấp.</br>\r\n- Khung chân bằng khung thép định hình, sơn tĩnh điện, giúp sản phẩm bền bỉ trong suốt quá trình sử dụng.\r\n(Bàn không bao gồm hộc)', '- Bàn văn phòng được làm từ gỗ MFC cao cấp.</br>\r\n- Khung chân bằng khung thép định hình, sơn tĩnh điện, giúp sản phẩm bền bỉ trong suốt quá trình sử dụng.\r\n(Bàn không bao gồm hộc)', 4, '2020-09-09 08:08:58', '2020-09-09 08:08:58', 'ok', 'ok', 'ok', 'ok', 'ban-van-phong-bvp-5s-09'),
-(15, 'TỦ QUẦN ÁO GIA ĐÌNH CA-7A-1KL\r\n', '- Tủ 2 cánh mở, có khóa riêng biệt, có tay nắm mạ Ni - Cr</br>\r\n- Thân tủ màu trắng sứ, cánh màu nâu sần.</br>\r\n- Bên trong tủ có một đợt cố định, 2 đợt di động và một xà treo quần áo và một ngăn phụ có khóa dùng lưu trữ những đồ vật có giá trị.', '- Tủ 2 cánh mở, có khóa riêng biệt, có tay nắm mạ Ni - Cr</br>\r\n- Thân tủ màu trắng sứ, cánh màu nâu sần.</br>\r\n- Bên trong tủ có một đợt cố định, 2 đợt di động và một xà treo quần áo và một ngăn phụ có khóa dùng lưu trữ những đồ vật có giá trị.', 15, '2020-09-10 00:10:39', '2020-09-10 00:10:39', 'ok', 'ok', 'ok', 'ok', 'tu-quan-ao-gia-dinh-ca-7a-1kl'),
 (16, 'GHẾ PHÒNG ĂN GS/GM/GI-01-00\r\n', '- Ghế gấp được làm từ khung ống thép mạ Ø22.2\r\n- Sản phẩm có 3 loại khung:\r\n  + Khung thép sơn tĩnh điện GS-01-00, giúp sản phẩm bền màu và không bị han gỉ\r\n  + Khung mạ Ni-Cr GM-01-00 cho sản phẩm có bề mặt sáng bóng và tăng độ cứng vững\r\n  + Khung Inox GI-01-00 giúp sản phẩm luôn bền bỉ, sáng bóng và không bị han gỉ\r\n- Mặt ngồi, tựa đệm mút bọc giả da\r\nCơ cấu gấp mở tiện dụng, dễ dàng gấp gọn khi không sử dụng.', '- Ghế gấp được làm từ khung ống thép mạ Ø22.2\r\n- Sản phẩm có 3 loại khung:\r\n  + Khung thép sơn tĩnh điện GS-01-00, giúp sản phẩm bền màu và không bị han gỉ\r\n  + Khung mạ Ni-Cr GM-01-00 cho sản phẩm có bề mặt sáng bóng và tăng độ cứng vững\r\n  + Khung Inox GI-01-00 giúp sản phẩm luôn bền bỉ, sáng bóng và không bị han gỉ\r\n- Mặt ngồi, tựa đệm mút bọc giả da\r\nCơ cấu gấp mở tiện dụng, dễ dàng gấp gọn khi không sử dụng.', 18, '2020-09-10 03:11:33', '2020-09-10 03:11:33', 'ok', 'ok', 'ok', 'ok', 'ghe-phong-an-gs-gm-gi-01-00');
 
 -- --------------------------------------------------------
@@ -261,7 +230,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `name`, `email`, `email_verified_at`, `password`, `remember_token`, `created_at`, `updated_at`, `privacy`) VALUES
-(1, 'ksh.dn', 'ksh.dn', '2020-09-12 17:00:00', '386702ec3ff6e914f35fdd55582e5dd0', 'YHgGRkNc7yoOaPCVN9c1tDfkUk9oJ71prOZxhIrT2RtC0sSPACaGIADjpzCk', '2020-09-22 17:00:00', '2020-09-15 17:00:00', 0),
+(1, 'ksh.dn', 'ksh.dn', '2020-09-12 17:00:00', '386702ec3ff6e914f35fdd55582e5dd0', 'l7QEGd2lwlOTeKldw3dI7kmFJ8uWpir1pBsltn0B2zZC73RZkmFnrF9Awx3m', '2020-09-22 17:00:00', '2020-09-15 17:00:00', 0),
 (2, 'nhan', 'nhan.vn', '2020-09-23 17:00:00', '0cc175b9c0f1b6a831c399e269772661', 'no', '2020-09-23 17:00:00', '2020-09-25 17:00:00', 0),
 (3, 'Phong', 'htphong01', NULL, '9bb7c5797da36f70e7f4e0b97c8282a5', 'no', NULL, NULL, 0);
 

@@ -181,37 +181,37 @@
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement1.jpg') }}" alt="">
-                    <p class="text-center">Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</p>
+                    <p class="text-center"><b>Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</b></p>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement2.jpg') }}" alt="">
-                    <p class="text-center">Phòng thương mại và Công nghiệp Việt Nam</p>
+                    <p class="text-center"><b>Phòng thương mại và Công nghiệp Việt Nam</b></p>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement2.jpg') }}" alt="">
-                    <p class="text-center">Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</p>
+                    <p class="text-center"><b>Hội doanh nhân trẻ thành phố Đà Nẵng năm 2017</b></p>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement4.jpg') }}" alt="">
-                    <p class="text-center">Một số bằng khen tiêu biểu khác</p>
+                    <p class="text-center"><b>Một số bằng khen tiêu biểu khác</b></p>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement3.jpg') }}" alt="">
-                    <p class="text-center">Tổng thầu phân phối miền Trung</p>
+                    <p class="text-center"><b>Tổng thầu phân phối miền Trung</b></p>
                   </div>
                 </div>
                 <div class="col-lg-4 mb-2">
                   <div class="prize">
                     <img class="img-fluid" src="{{ asset('images/achievement5.jpg') }}" alt="">
-                    <p class="text-center">Thành viên Hội Mỹ nghệ và Chế biến gỗ thành phố Hồ Chí Minh</p>
+                    <p class="text-center"><b>Thành viên Hội Mỹ nghệ và Chế biến gỗ thành phố Hồ Chí Minh</b></p>
                   </div>
                 </div>
               </div>

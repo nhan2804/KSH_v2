@@ -20,6 +20,7 @@
 	font-weight: bold;
 	margin-bottom: 32px;
 	color: var(--primary);
+	text-transform: uppercase;
 }
 
 .g-intro-2-wrap {
